@@ -1,0 +1,9 @@
+{
+  "name": "dvi",
+  "private": true,
+  "dependencies": {
+    "sass-bootstrap":"3.0.2",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {}
+}
