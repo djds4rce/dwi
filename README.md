@@ -6,4 +6,4 @@ Dwi is Sanskrit for two. Dwi is a experimental 'two' way binding implementation 
 * Write Tests(Ducks)
 * Not care about cross browser.
 
-This is still a work in progress with a lot of refactoring and improvements pending. Demo of Current progress can be found [Here](http://example.net/)
+This is still a work in progress with a lot of refactoring and improvements pending. Demo of Current progress can be found [Here](http://djds4rce.github.io/dwi/)
