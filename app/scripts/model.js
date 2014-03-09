@@ -4,20 +4,19 @@ var modelObject = {};
   var model = {}; 
 
   q.set =  function(key,value){
-    this.setClean(key,value);
     pubsub.publish("model:Change",{key:key,value:value});
   };
 
   q.setClean = function(key,value){
-    key = key.split(".");
-    var obj = model[key.shift()];
-    while (key.length > 1)
-      obj = obj[key.shift()];
+    var keys = key.split(".");
+    var obj = model[keys.shift()];
+    while (keys.length > 1)
+      obj = obj[keys.shift()];
     if(obj){
-      obj[key.shift()] = value;
+      obj[keys.shift()] = value;
     }
     else{
-      key = value;
+      model[key] = value;
     }
     return;
   }

@@ -38,15 +38,21 @@
                   <h3 class="form-signin-heading">Model with single data(name)</h3>
                   <div class='form-group'>
                     <label>name:</label> 
-                    <input type='text' data-model='data'>
+                    <input type='text' data-model='name'>
                   </div>
                   <div class='form-group'>
                     <label>name:</label> 
-                    <input type='text' data-model='data'>
+                    <input type='text' data-model='name'>
                   </div>
                   <div class='form-group'>
                     <label>name bound to p tag:</label>
-                    <label data-model='data'></label>
+                    <label data-model='name'></label>
+                  </div>
+                  <div class='form-group'>
+                    <h4><u>Javscript binding</u></h4>
+                    <b>Fire up your console</b>
+                    <p>modelObject.get("name");</p></br>
+                    <p>modelObject.set("name","testing two way");</p>
                   </div>
                 </form>
               </div>
@@ -67,6 +73,13 @@
                   <label>user.name bound to p tag:</label>
                   <p data-model='user.name'></p>
                 </div>
+                <div class='form-group'>
+                    <h4><u>Javscript binding</u></h4>
+                    <b>Fire up your console</b>
+                    <p>modelObject.get("user");</p></br>
+                    <p>modelObject.get("user.name");</p></br>
+                    <p>modelObject.set("user.name","testing two way on object");</p>
+                  </div>
               </div>
             </div>
             <div class="footer">
