@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>Dwi</title>
+          <meta name="description" content="">
+          <meta name="viewport" content="width=device-width">
+          <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+          <!-- build:css styles/vendor.css -->
+          <!-- bower:css -->
+
+          <!-- endbower -->
+          <!-- endbuild -->
+          <!-- build:css(.tmp) styles/main.css -->
+          <link rel="stylesheet" href="styles/main.css">
+          <!-- endbuild -->
+        </head>
+        <body>
+          <!--[if lt IE 10]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+
+          <a href="http://github.com/djds4rce/dwi"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+          <div class="container">
+            <div class="page-header">
+              <h1 class="text-muted">Dwi</h1>
+              <p>An experimental Two way binding Implementation for educational purposes</p>
+            </div>
+
+
+            <div class='row'>
+              <div class='col-lg-12'>
+                <form  class="form-signin" role="form">
+                  <h3 class="form-signin-heading">Model with single data(name)</h3>
+                  <div class='form-group'>
+                    <label>name:</label> 
+                    <input type='text' data-model='name'>
+                  </div>
+                  <div class='form-group'>
+                    <label>name:</label> 
+                    <input type='text' data-model='name'>
+                  </div>
+                  <div class='form-group'>
+                    <label>name bound to p tag:</label>
+                    <label data-model='name'></label>
+                  </div>
+                  <div class='form-group'>
+                    <h4><u>Javscript binding</u></h4>
+                    <b>Fire up your console</b>
+                    <p>modelObject.get("name");</p></br>
+                    <p>modelObject.set("name","testing two way");</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Model with Object</h3>
+                <div class='form-group'>
+                  <label>user.name:</label>
+                  <input type='text' data-model='user.name'>
+                </div>
+                <div class='form-group'>
+                  <label>user.name:</label>
+                  <input type='text' data-model='user.name'>
+                </div>
+                <div class='form-group'>
+                  <label>user.name bound to p tag:</label>
+                  <p data-model='user.name'></p>
+                </div>
+                <div class='form-group'>
+                    <h4><u>Javscript binding</u></h4>
+                    <b>Fire up your console</b>
+                    <p>modelObject.get("user");</p></br>
+                    <p>modelObject.get("user.name");</p></br>
+                    <p>modelObject.set("user.name","testing two way on object");</p>
+                  </div>
+              </div>
+            </div>
+            <div class="footer">
+              <p>djds4rce</p>
+            </div>
+
+          </div>
+
+
+          <!-- build:js scripts/vendor.js -->
+          <!-- bower:js -->
+          <script src="bower_components/lodash/dist/lodash.min.js"></script>
+          <!-- endbower -->
+          <!-- endbuild -->
+
+          <!-- build:js scripts/plugins.js -->
+          <!-- endbuild -->
+
+          <!-- build:js({app,.tmp}) scripts/main.js -->
+          <script src="scripts/util.js"></script>
+          <script src="scripts/pubsub-simple.js"></script>
+          <script src="scripts/model.js"></script>
+          <script src="scripts/watcher.js"></script>
+          <script src="scripts/main.js"></script>
+          <!-- endbuild -->
+        </body>
+      </html>
